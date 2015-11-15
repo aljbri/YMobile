@@ -1,0 +1,23 @@
+{
+  "name": "Khedmatk/YMobile",
+  "description": "Package for BankInterface work on BSS-Huawei, (Yemen Mobile Network) Yemen Telecommunication Services Providers",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.3.3",
+    "ext-soap": "*"
+  },
+  "autoload": {
+    "classmap": ["src/"],
+    "psr-4": {
+      "YMobile\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "AbdusSalam Aljbri",
+      "email": "mr.aljbri@gmail.com"
+    }
+  ]
+
+}
