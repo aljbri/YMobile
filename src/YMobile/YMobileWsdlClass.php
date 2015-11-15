@@ -261,8 +261,6 @@ class YMobileWsdlClass extends \stdClass implements \ArrayAccess,\Iterator,\Coun
             unset($wsdlOptions[str_replace(self::OPTION_PREFIX, '', self::WSDL_URL)]);
             $soapClientClassName = $this->getSoapClientClassName();
             self::setSoapClient(new $soapClientClassName($wsdlUrl, $wsdlOptions));
-
-            echo "<script> console.log('".var_dump($_wsdlOptions)."')</script>\n";
         }
     }
     /**
