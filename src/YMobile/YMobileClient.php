@@ -67,8 +67,7 @@ class YMobileClient
         $QryHeader->setCommandId('QryCustInfo');
         $QryHeader->setTransactionId(is_null($_transactionId)? rand():$_transactionId);
         $Qry = $this->_YMobileQry;
-		
-		var_dump($Qry->getSoapClient());
+	
         $QryRequest = new YMobileQryCustInfoRequest($_subscriberNo);
         if($Qry->QryCustInfo(new YMobileQryCustInfoRequestMessage($QryHeader,$QryRequest)))
             return ($Qry->getResult());
